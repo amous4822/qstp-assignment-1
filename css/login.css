@@ -1,0 +1,15 @@
+.verti{
+    width: 40%;
+    height: 40%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#exampleInputEmail1{
+  width:500px;
+}
+#exampleInputPassword1{
+  width:500px;
+}

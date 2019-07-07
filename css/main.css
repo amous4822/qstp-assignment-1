@@ -1,0 +1,118 @@
+#side-nav{
+  cursor: pointer;
+  font-size: 30px;  
+  visibility: hidden;
+}
+
+body{
+  padding-top: 80px;
+}
+
+.navbar{
+  margin: 10px;
+}
+
+.itenary-list-items{
+  display: inline-block;
+}
+
+.event-cards{
+  display: flex;
+  align-items: stretch;
+}
+
+.put-in-center{
+  z-index: 1;
+  position: fixed;
+}
+
+.card{
+  margin: 30px;
+}
+
+.sidenav {
+  
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+}
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+  .sidenav a:hover {
+    color: #d81f1f;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* floating bar css*/
+
+  .float{
+    visibility: hidden;
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#0C9;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+  }
+  
+  .my-float{
+    margin-top:22px;
+  }
+
+  .fa{
+    font-size: 40px;
+  }
+  
+
+
+@media only screen and (max-width: 600px) {
+  #side-nav{
+      visibility: visible;
+      margin : 10px 0px 0px 10px;
+      position: fixed;
+      z-index: 1;
+  }
+
+  .float{
+    visibility: visible;
+    z-index: 1;
+  }
+
+  body{
+    padding: 0px;
+  }
+
+  .hidden{
+    visibility: hidden;
+  }
+
+  .navbar{
+      visibility: hidden;
+  }
+} 
